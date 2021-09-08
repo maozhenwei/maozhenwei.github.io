@@ -1,5 +1,112 @@
-<html>
-  <body>
-    啦啦啦
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .container {
+      height: 100vh;
+      width: 100%;
+      background-color: aqua;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .container .head {
+      height: 100px;
+      background-color: blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container .main {
+      flex: 1;
+      background-color: rgb(255, 102, 0);
+      overflow: hidden;
+      display: flex;
+    }
+    .container .main .menu{
+      display: flex;
+      flex-direction: column;
+    }
+    .container .main .menu .logo{
+      height: 100px;
+      width: 100%;
+      background-color: blueviolet;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container .main .menu ul{
+      flex: 1;
+      overflow-y: scroll;
+    }
+    .container .main .menu ul>li{
+        height: 200px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #000;
+    }
+    .container .main .body {
+      flex: 1;
+      background-color: rgb(255, 102, 0);
+      overflow-y: scroll;
+    }
+    .container .main .body div{
+      height: 200px;
+      width: 200px;
+      border-bottom: 1px solid #000;
+      background-color: aqua;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container .footer {
+      height: 100px;
+      background-color: rgb(137, 206, 97);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="head">
+      <h1>头部</h1>
+    </div>
+    <div class="main">
+      <div class="menu">
+        <div class="logo">
+          <h1>FLEX布局</h1>
+        </div>
+        <ul>
+          <li>我是菜单</li><li>我是菜单</li><li>我是菜单</li><li>我是菜单</li><li>我是菜单</li>
+          <li>我是菜单</li><li>我是菜单</li><li>我是菜单</li><li>我是菜单</li><li>我是菜单</li>
+          <li>我是菜单</li><li>我是菜单</li><li>我是菜单</li><li>我是菜单</li><li>我是菜单</li>
+          <li>我是菜单</li><li>我是菜单</li><li>我是菜单</li><li>我是菜单</li><li>我是菜单</li>
+        </ul>
+      </div>
+      <div class="body">
+          <div>我很长</div><div>我很长</div><div>我很长</div><div>我很长</div><div>我很长</div>
+          <div>我很长</div><div>我很长</div><div>我很长</div><div>我很长</div><div>我很长</div>
+          <div>我很长</div><div>我很长</div><div>我很长</div><div>我很长</div><div>我很长</div>
+          <div>我很长</div><div>我很长</div><div>我很长</div><div>我很长</div><div>我很长</div>
+          <div>我很长</div><div>我很长</div><div>我很长</div><div>我很长</div><div>我很长</div>
+          <div>我很长</div><div>我很长</div><div>我很长</div><div>我很长</div><div>我很长</div>
+      </div>
+    </div>
+    <div class="footer">
+      <h1>底部</h1>
+    </div>
+  </div>
+</body>
 </html>
